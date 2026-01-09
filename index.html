@@ -197,8 +197,8 @@
     }
     h1{
       margin:0;
-      font-size: 42px;
-      line-height: 1.05;
+      font-size: clamp(28px, 7.2vw, 42px);
+      line-height: 1.06;
       letter-spacing: -0.02em;
     }
     .lead{
@@ -402,6 +402,53 @@
       .grid-3{ grid-template-columns: 1fr; }
       .grid-2{ grid-template-columns: 1fr; }
       .nav{ display:none; } /* чисто и дорого на мобиле */
+      .hero-card{ min-height: auto; }
+      .side-card{ min-height: auto; }
+    }
+
+@media (max-width: 480px){
+      .wrap{ padding: 0 16px; }
+
+      .hero{ padding: 26px 0 14px; }
+
+      .hero-card{
+        padding: 20px;
+        border-radius: 22px;
+        min-height: auto;
+      }
+
+      .side-card{
+        padding: 18px;
+        border-radius: 22px;
+        min-height: auto;
+      }
+
+      .lead{
+        font-size: 14px;
+        margin-top: 12px;
+      }
+
+      .kicker{
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+
+      .hero-actions{
+        gap: 8px;
+      }
+
+      .btn{
+        padding: 10px 12px;
+        font-size: 13px;
+      }
+
+      .topbar-inner{
+        padding: 10px 0;
+      }
+
+      .brand-title span{
+        display:none; /* чтобы шапка не “раздувалась” */
+      }
     }
   </style>
 </head>
