@@ -167,7 +167,7 @@
       padding: 30px;
       overflow:hidden;
       position:relative;
-      min-height: 320px;
+      min-height: auto;
     }
     .hero-card:before{
       content:"";
@@ -225,7 +225,7 @@
       background: rgba(255,255,255,.04);
       box-shadow: var(--shadow);
       padding: 22px;
-      min-height: 320px;
+      min-height: auto;
       display:flex;
       flex-direction:column;
       justify-content:space-between;
@@ -393,7 +393,6 @@
     /* Responsive */
     @media (max-width: 980px){
       .hero-grid{ grid-template-columns: 1fr; }
-      h1{ font-size: 38px; }
       .cta-row{ min-width:auto; }
       .brand{ min-width:auto; }
       .section-head p{ text-align:left; }
